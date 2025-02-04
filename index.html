@@ -9,6 +9,8 @@
     <meta name="theme-color" content="#4CAF50">
     <!-- Add base URL for GitHub Pages -->
     <base href="/life-days-reminder/">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icons/icon-192.png">
 </head>
 <body>
     <div class="container">
@@ -17,10 +19,15 @@
             <label for="birthdate">Your Birth Date:</label>
             <input type="date" id="birthdate">
             <button id="saveButton">Save & Enable Notifications</button>
+            <p class="info">(Notifications will be sent every 10 minutes)</p>
         </div>
         <div class="status-section">
             <p id="status"></p>
             <p id="daysCount"></p>
+        </div>
+        <div class="debug-section">
+            <button id="debugButton" class="debug-button">Check Notification Status</button>
+            <div id="debugInfo" class="debug-info"></div>
         </div>
     </div>
     <script src="script.js"></script>
